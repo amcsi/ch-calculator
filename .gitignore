@@ -69,3 +69,5 @@ web-report/
 
 # macOS
 .DS_Store
+
+.expo
