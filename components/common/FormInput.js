@@ -20,7 +20,7 @@ function FormInput({
       inputContainerStyle={[{ borderColor: borderBottomColor }, inputContainerStyle]}
       inputStyle={[defaultTextStyle, inputStyle]}
       placeholderTextColor={placeholderTextColor || placeholderText}
-      underlineColorAndroid={borderBottomColor}
+      underlineColorAndroid="transparent"
     />
   );
 }
