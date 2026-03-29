@@ -2434,11 +2434,6 @@ ci-info@^3.2.0, ci-info@^3.3.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
-cldrjs@^0.5.0:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/cldrjs/-/cldrjs-0.5.5.tgz#5c92ca2de89a8a16dea76cb2dfc4e00104428e52"
-  integrity sha512-KDwzwbmLIPfCgd8JERVDpQKrUUM1U4KpFJJg2IROv89rF172lLufoJnqJ/Wea6fXL5bO6WjuLMzY8V52UWPvkA==
-
 cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
@@ -3015,10 +3010,6 @@ glob@^7.1.1, glob@^7.1.3, glob@^7.1.4:
     minimatch "^3.1.1"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
-
-globalize@joshswan/globalize:
-  version "1.1.1"
-  resolved "https://codeload.github.com/joshswan/globalize/tar.gz/1e0466dcba692e3a7674e40a43d23f160f4f4bf4"
 
 globals@^11.1.0:
   version "11.12.0"
@@ -4071,11 +4062,6 @@ mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-moment@^2.19.3:
-  version "2.29.4"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
-  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
-
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4557,16 +4543,6 @@ react-native-gesture-handler@~2.30.0:
     "@egjs/hammerjs" "^2.0.17"
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
-
-react-native-globalize@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-native-globalize/-/react-native-globalize-1.2.4.tgz#87a7ed924766c7045c4490950b182cfc695bfea3"
-  integrity sha512-sp7S2fEYxOsCNkTw2b047N4vVNBorl2MQ04x/1lwQIYbQQO7lx/vGW6hqfD1uwefU3mgRIOAde+e9WQF2lv6xg==
-  dependencies:
-    cldrjs "^0.5.0"
-    globalize joshswan/globalize
-    moment "^2.19.3"
-    prop-types "^15.5.10"
 
 react-native-safe-area-context@~5.6.2:
   version "5.6.2"
