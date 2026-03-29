@@ -5,6 +5,7 @@ import { alternativeText } from "../data/colors";
 import ChToGrams from "./ChToGrams";
 import Text from "./common/Text";
 import GramsToCh from "./GramsToCh";
+import appJson from '../app.json';
 
 /** @class */
 class Main extends React.Component {
@@ -57,7 +58,7 @@ class Main extends React.Component {
         </Swiper>
         <View style={{ flexDirection: "row", justifyContent: "center" }}>
           <TouchableOpacity onPress={() => this.props.navigation.navigate("credits")}>
-            <Text style={{ color: alternativeText }}>Készítette: Szerémi Attila</Text>
+            <Text style={{ color: alternativeText }}>Verzió: {appJson.expo.version} - Készítette: Szerémi Attila</Text>
           </TouchableOpacity>
         </View>
       </View>
