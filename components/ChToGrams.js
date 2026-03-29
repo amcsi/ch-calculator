@@ -1,5 +1,5 @@
 import React from "react";
-import { KeyboardAvoidingView, StyleSheet } from "react-native";
+import { KeyboardAvoidingView, StyleSheet, View } from "react-native";
 import { resultText } from "../data/defaultStyles";
 import { calculateGramsInCh } from "../services/calculators";
 import FormInput from "./common/FormInput";
@@ -20,6 +20,8 @@ class ChToGrams extends React.Component {
     return (
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <Text style={[resultText, textCenter]}>Hány grammban van ennyi CH?</Text>
+
+        <View style={{ height: 30 }} />
 
         <FormInput
           label="CH/100g"
