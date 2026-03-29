@@ -3,7 +3,6 @@ import { KeyboardAvoidingView, StyleSheet } from "react-native";
 import { resultText } from "../data/defaultStyles";
 import { calculateGramsInCh } from "../services/calculators";
 import FormInput from "./common/FormInput";
-import FormLabel from "./common/FormLabel";
 import Text from "./common/Text";
 import FormattedNumber from "./FormattedNumber";
 
@@ -22,8 +21,8 @@ class ChToGrams extends React.Component {
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <Text style={[resultText, textCenter]}>Hány grammban van ennyi CH?</Text>
 
-        <FormLabel>CH/100g</FormLabel>
         <FormInput
+          label="CH/100g"
           keyboardType="numeric"
           selectTextOnFocus
           value={chPer100G ? String(chPer100G) : ""}
@@ -31,8 +30,8 @@ class ChToGrams extends React.Component {
           placeholder="CH/100g"
         />
 
-        <FormLabel>CH/étkezés</FormLabel>
         <FormInput
+          label="CH/étkezés"
           keyboardType="numeric"
           selectTextOnFocus
           value={chPerMeal ? String(chPerMeal) : ""}

@@ -3,7 +3,6 @@ import { KeyboardAvoidingView, StyleSheet } from "react-native";
 import { resultText } from "../data/defaultStyles";
 import { calculateChInGrams } from "../services/calculators";
 import FormInput from "./common/FormInput";
-import FormLabel from "./common/FormLabel";
 import Text from "./common/Text";
 import FormattedNumber from "./FormattedNumber";
 
@@ -18,8 +17,8 @@ class ChToGrams extends React.Component {
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <Text style={[resultText, textCenter]}>Hány gramm CH van ebben?</Text>
 
-        <FormLabel>CH/100g</FormLabel>
         <FormInput
+          label="CH/100g"
           keyboardType="numeric"
           selectTextOnFocus
           value={chPer100G ? String(chPer100G) : ""}
@@ -27,8 +26,8 @@ class ChToGrams extends React.Component {
           placeholder="CH/100g"
         />
 
-        <FormLabel>Súly</FormLabel>
         <FormInput
+          label="Súly"
           keyboardType="numeric"
           selectTextOnFocus
           value={grams ? String(grams) : ""}
