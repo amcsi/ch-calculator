@@ -4,7 +4,7 @@
     "description": "Kiszámol szénhidrát mennyiségeket inzulin rezisztanciával rendelkező emberek számára.",
     "slug": "ch-calculator",
     "platforms": ["ios", "android", "web"],
-    "version": "1.2.0",
+    "version": "1.3.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -19,7 +19,7 @@
     "android": {
       "package": "org.szeremi.ch_calculator",
       "permissions": [],
-      "versionCode": 2097158
+      "versionCode": 2097159
     },
     "ios": {
       "supportsTablet": true
