@@ -1,10 +1,10 @@
-import React from 'react';
-import { Dimensions, TouchableOpacity, View } from 'react-native';
-import Swiper from 'react-native-swiper';
-import { alternativeText } from '../data/colors';
-import ChToGrams from './ChToGrams';
-import Text from './common/Text';
-import GramsToCh from './GramsToCh';
+import React from "react";
+import { Dimensions, TouchableOpacity, View } from "react-native";
+import Swiper from "react-native-swiper";
+import { alternativeText } from "../data/colors";
+import ChToGrams from "./ChToGrams";
+import Text from "./common/Text";
+import GramsToCh from "./GramsToCh";
 
 /** @class */
 class Main extends React.Component {
@@ -19,26 +19,26 @@ class Main extends React.Component {
     header: null,
   };
 
-  onChPer100GramChange = chPer100G => {
+  onChPer100GramChange = (chPer100G) => {
     this.setState({
       chPer100G: chPer100G,
     });
   };
 
-  onChPerMealChange = chPerMeal => {
+  onChPerMealChange = (chPerMeal) => {
     this.setState({
       chPerMeal: chPerMeal,
     });
   };
 
-  onGramsChange = grams => {
+  onGramsChange = (grams) => {
     this.setState({
       grams: grams,
     });
   };
 
   render() {
-    const deviceWidth = Dimensions.get('window').width;
+    const deviceWidth = Dimensions.get("window").width;
     return (
       <View style={styles.container}>
         <Swiper loop={false} activeDotColor="#249081" containerStyle={{ width: deviceWidth }}>
@@ -55,8 +55,8 @@ class Main extends React.Component {
             onGramsChange={this.onGramsChange}
           />
         </Swiper>
-        <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-          <TouchableOpacity onPress={() => this.props.navigation.navigate('credits')}>
+        <View style={{ flexDirection: "row", justifyContent: "center" }}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate("credits")}>
             <Text style={{ color: alternativeText }}>Készítette: Szerémi Attila</Text>
           </TouchableOpacity>
         </View>
@@ -69,8 +69,8 @@ const styles = {
   container: {
     flex: 1,
     paddingBottom: 20,
-    display: 'flex',
-    backgroundColor: '#00695C',
+    display: "flex",
+    backgroundColor: "#00695C",
   },
 };
 

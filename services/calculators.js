@@ -1,6 +1,6 @@
 function normalizeNumber(num) {
   // Allow for both commas and periods.
-  return Number(String(num).replace(',', '.'));
+  return Number(String(num).replace(",", "."));
 }
 
 export function calculateGramsInCh(chPer100g, chPerMeal) {

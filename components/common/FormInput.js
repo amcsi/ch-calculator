@@ -1,7 +1,7 @@
-import React from 'react';
-import { FormInput as RNEFormInput } from 'react-native-elements';
-import defaultTextStyle from '../../data/defaultTextStyle';
-import { formInputBorderBottom, placeholderText } from '../../data/colors';
+import React from "react";
+import { FormInput as RNEFormInput } from "react-native-elements";
+import defaultTextStyle from "../../data/defaultTextStyle";
+import { formInputBorderBottom, placeholderText } from "../../data/colors";
 
 /** @class */
 function FormInput({ containerStyle, inputStyle, placeholderTextColor, ...restProps }) {

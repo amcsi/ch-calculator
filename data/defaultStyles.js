@@ -1,5 +1,5 @@
-import { background } from './colors';
-import defaultTextStyle from './defaultTextStyle';
+import { background } from "./colors";
+import defaultTextStyle from "./defaultTextStyle";
 
 export const view = {
   backgroundColor: background,
